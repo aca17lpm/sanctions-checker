@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     search = input("Enter your search phrase:") # e.g. 'MURADOV'
 
-    # Use direct term matching to 
+    # Use direct term matching to find entities
     results = index.search(search, search_type='AND')
     print(f"Found {len(results)} results for search phrase '{search}'")
     pprint(results)
@@ -24,6 +24,7 @@ if __name__ == "__main__":
     print(f"====================")
     print()
 
+    # Use fuzzy matching to find entities
     print(f"Doing fuzzy matching")
     results = get_matching_entities(search, all_entities)
     print(f"Found {len(results)} results uszing fuzzy matching for search phrase '{search}'")
