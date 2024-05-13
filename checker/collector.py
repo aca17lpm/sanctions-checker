@@ -5,14 +5,14 @@ import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import Element   
 import pandas as pd
 
-from packages.sanctions.entities import UNSanctionedEntity
-from packages.sanctions.constants import ( 
+from checker.entities import UNSanctionedEntity
+from checker.constants import ( 
     UK_HEADER, EU_HEADER, USA_ADDRESS_HEADER, USA_SDN_HEADER,
     UK_LIST, EU_LIST, UN_LIST, AU_LIST, USA_FOLDER, SANCTIONS_FOLDER
 )
-from packages.sanctions.entities import SanctionedEntity, UKSanctionedEntity, EUSanctionedEntity, USSanctionedEntity, AUSanctionedEntity
-from packages.sanctions.index import Index
-from packages.sanctions.fuzzy_matcher import get_matching_entities
+from checker.entities import SanctionedEntity, UKSanctionedEntity, EUSanctionedEntity, USSanctionedEntity, AUSanctionedEntity
+from checker.index import Index
+from checker.fuzzy_matcher import get_matching_entities
 
         
 def get_uk_entities():

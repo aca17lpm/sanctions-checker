@@ -8,8 +8,8 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger('scheduler')
 
-from packages.sanctions.adapter import get_custom_un_session
-from packages.sanctions.constants import (
+from checker.adapter import get_custom_un_session
+from checker.constants import (
     SANCTIONS_FOLDER, UK_LIST, EU_LIST, AU_LIST, UN_LIST, TIMESTAMP,
     UK_ADDRESS, EU_ADDRESS, AU_ADDRESS, UN_ADDRESS, USA_ADDRESSES, USA_FILENAMES,
     USA_FOLDER

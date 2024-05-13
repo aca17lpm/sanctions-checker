@@ -7,8 +7,8 @@ from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
 
-from packages.sanctions.entities import SanctionedEntity
-from packages.sanctions.updater import read_download_timestamps
+from checker.entities import SanctionedEntity
+from checker.updater import read_download_timestamps
 
 STANDARD_SPACER_HEIGHT = 12
 

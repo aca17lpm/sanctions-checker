@@ -5,7 +5,7 @@ import re
 import string
 from typing import List
 
-from packages.sanctions.entities import SanctionedEntity
+from checker.entities import SanctionedEntity
 
 PUNCTUATION = re.compile('[%s]' % re.escape(string.punctuation))
 

@@ -1,7 +1,7 @@
 from typing import List
 import difflib
 from fuzzywuzzy import fuzz
-from packages.sanctions.index import analyze
+from checker.index import analyze
 
 THRESHOLD = 0.7
 
