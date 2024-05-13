@@ -67,7 +67,7 @@ USA_ADDRESS_HEADER = [
 
 USA_NULL_INDICATOR = '-0- '
 
-SANCTIONS_FOLDER = 'data/sanctions'
+SANCTIONS_FOLDER = 'data'
 TIMESTAMP = '/timestamp.json'
 
 UK_LIST = '/UKSanctionsList.csv'

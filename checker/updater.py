@@ -6,7 +6,7 @@ import os
 
 import logging
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger('scheduler')
+logger = logging.getLogger('sanctions')
 
 from checker.adapter import get_custom_un_session
 from checker.constants import (
@@ -114,8 +114,6 @@ def update_all():
 
     if update_un():
         download_timestamps['un'] = timestamp()
-
-    print(download_timestamps)
 
     write_download_timestamps(download_timestamps)
     logger.info(f"CSV Sanctions updated... {download_timestamps}")

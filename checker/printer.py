@@ -43,7 +43,7 @@ def generate_sanctions_report(request) -> io.BytesIO:
     # Title
     title_style = styles['Heading1']
     title_style.alignment = 1
-    story.append(Paragraph('AMA Sanctions Report', title_style))
+    story.append(Paragraph('Sanctions Report', title_style))
 
     # Query information
     story.append(Paragraph(f'Query: {query}', styles['Normal']))

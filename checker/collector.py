@@ -100,7 +100,6 @@ def get_eu_entities():
                 identifiers=identifiers
             )
 
-            if not entity.address : print(entity)
             entities.append(entity)
 
     return entities
@@ -297,25 +296,3 @@ def index_entities(entities : List[SanctionedEntity], index : Index):
     for i, document in enumerate(entities):
         index.index_entity(document)
     return index
-
-if __name__ == "__main__":
-
-    ents = get_un_entities()
-    print(ents[-1])
-    exit()
-
-    all_entities = get_all_entities()
-    index = index_entities(all_entities, Index())
-    print(f"Index contains {len(index.entities)} documents")
-
-    search = 'MURADOV'
-    results = index.search(search, search_type='AND')
-    print(f"Found {len(results)} results for {search}")
-    print(results[0])
-
-    
-    print(f"====================")
-    print()
-    print(f"Doing fuzzy matching")
-    results = get_matching_entities(search, all_entities)
-    print(f"Found {len(results)} results for {search}")
